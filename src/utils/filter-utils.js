@@ -563,7 +563,7 @@ export function getFilterPlot(filter, allData) {
       x: mappedValue[i],
       y: d[yAxis.tableFieldIndex - 1]
     }))
-    .filter(({x, y}) => Number.isFinite(x) && Number.isFinite(y))
+//    .filter(({x, y}) => Number.isFinite(x) && Number.isFinite(y))
     .sort((a, b) => ascending(a.x, b.x));
 
   const yDomain = extent(series, d => d.y);
